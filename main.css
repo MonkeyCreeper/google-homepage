@@ -1,0 +1,82 @@
+html {
+  height: 100%;
+  min-width: 400px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+body {
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+  color: #222;
+}
+
+nav {
+  display: flex;
+  padding: 8px;
+  background-color: chartreuse;
+  align-items: center;
+}
+
+#leftside {
+  flex-grow: 1;
+  align-self: left;
+  display: block;
+  padding: 8px;
+  background-color: pink;
+}
+
+#leftside li {
+  float: left;
+  padding: 3px;
+}
+
+#rightside {
+  flex-grow: 2;
+  align-self: right;
+  display: block;
+  padding: 8px;
+  background-color: red;
+}
+
+#rightside li {
+  float: right;
+  padding: 3px;
+}
+
+.personal {
+  display: flex;
+}
+
+.googlelogo {
+  display: flex;
+  flex-direction: column;
+  /*order: 2;*/
+  align-items: center;
+}
+
+.actuallogo {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  object-position: center bottom;
+}
+
+.search_container {
+  max-height: 160px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
