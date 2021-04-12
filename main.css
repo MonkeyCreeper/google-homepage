@@ -2,12 +2,14 @@ html {
   height: 100%;
   min-width: 400px;
 }
+a:link, a:visited{
+text-decoration: none;
+}
 
 main {
   display: flex;
   flex-direction: column;
   height: 100%;
- 
   
 }
 
@@ -15,15 +17,16 @@ body {
   font-size: 14px;
   font-family: Arial, sans-serif;
   color: #222;
+  height: 100%;
 }
 
 nav {
   display: flex;
   padding: 8px;
-  background-color: chartreuse;
+  
   align-items: stretch;
 }
-ul {
+nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -35,7 +38,7 @@ ul {
   align-items: stretch;
   display: block;
   padding: 8px;
-  background-color: pink;
+ 
 }
 
 #leftside li {
@@ -49,7 +52,7 @@ ul {
   align-self: right;
   display: block;
   padding: 8px;
-  background-color: red;
+  
 }
 
 #rightside li {
@@ -67,13 +70,14 @@ ul {
   flex-direction: column;
   /*order: 2;*/
   align-items: center;
+  min-height: 200px;
 }
 
 .actuallogo {
   max-width: 100%;
   max-height: 100%;
   object-fit: contain;
-  object-position: center bottom;
+  margin-top: auto;
 }
 
 .search_container {
@@ -84,35 +88,54 @@ ul {
   
 }
 
-/*#midfield{
-  display: flex;
-}*/
+#mid{
+  text-align: center;
+  
+}
+
+
 
 .search_field{
   display: flex;
   border: 1px solid #e1e1e1;
   border-radius: 50px;
   height: 24px;
-  
- 
+  margin-top: 3px;
+  width: 450px;
 }
 #search{
   border:none;
   border-radius: 50px;
   height: 24px;
-  
+  width: 100%;
 }
-
- 
+#mid button{
+  margin: 20px 5px;
+  height: 36px;
+  border-style: 1px solid #ffffff;
 }
 
 footer {
-  display: flex;
-  flex-direction: column;
+  background-color: rgb(235, 235, 235);
+  display: block;
+  padding: 8px;
+  
+  justify-self: flex-end;
 }
 
-ul {
+footer ul {
   list-style-type: none;
   margin: 0;
-  padding: 0;
+  padding: 0px;
+  
+}
+footer ul li{
+  float: left;
+  padding: 8px;
+}
+.Land{
+  background-color: rgb(235,235,235);
+  margin-top: auto;
+  padding: 10px;
+  border-bottom: 1px solid rgba(180, 180, 180, 0.452);
 }
